@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page__action--container {
+    height: 3rem;
+    background-color: lightblue;
+}
+.cellProperties__action--container {
+    height: 3rem;
+    background-color: lightcoral;
+}
+.formula__action--container {
+    height: 3rem;
+    background-color: lightgoldenrodyellow;
+}
+.grid--container {
+    height: calc(100vh - 12rem);
+    background-color: lightgreen;
+}
+.sheet__action--container {
+    height: 3rem;
+    background-color: lightslategray;
+}
