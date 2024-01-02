@@ -4,14 +4,70 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
         <title>Excel Clone</title>
     </head>
     <body>
-        <div class="page__action--container"></div>
-        <div class="cellProperties__action--container"></div>
-        <div class="formula__action--container"></div>
-        <div class="grid--container"></div>
-        <div class="sheet__action--container"></div>
-        <link rel="scropt" href="script.js" />
+        <div class="page__action--container">
+            <div class="page__action">Home</div>
+            <div class="page__action">File</div>
+            <div class="page__action">Insert</div>
+            <div class="page__action">Layout</div>
+            <div class="page__action">Help</div>
+        </div>
+        <div class="cellProperties__action--container">
+            <span class="material-symbols-outlined"> content_cut </span>
+            <span class="material-symbols-outlined"> content_copy </span>
+            <span class="material-symbols-outlined"> content_paste </span>
+            <select class="font-family-prop">
+                <option value="monospace">Monospace</option>
+                <option value="sans-Sarif">Sans Sarif</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="cursive">Cursive</option>
+            </select>
+            <select class="font-Size-prop">
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+                <option value="20">20px</option>
+                <option value="25">25px</option>
+            </select>
+            <span class="material-symbols-outlined"> format_bold </span>
+            <span class="material-symbols-outlined"> format_italic </span>
+            <span class="material-symbols-outlined"> format_underlined </span>
+            <span class="material-symbols-outlined">
+                format_align_justify
+            </span>
+            <span class="material-symbols-outlined"> format_align_center </span>
+            <span class="material-symbols-outlined"> format_align_left </span>
+            <span class="material-symbols-outlined"> format_align_right </span>
+        </div>
+        <div class="formula__action--container">
+            <input type="text" readonly class="address-bar" />
+            <img
+                class="formula-icon"
+                src="https://img.icons8.com/ios/50/formula-fx.png"
+                alt="formula-fx"
+            />
+            <input type="text" class="formula-bar" />
+        </div>
+        <div class="grid--container">
+            <div class="top-left-dummy-container"></div>
+            <div class="address-column-container"></div>
+
+            <div class="cells-container">
+                <div class="address-row-container"></div>
+            </div>
+        </div>
+        <div class="sheet__action--container">
+            <span class="material-symbols-outlined"> post_add </span>
+            <div class="sheet-folder--container">
+                <div class="sheet-folder">Sheet 1</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

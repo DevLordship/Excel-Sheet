@@ -6,21 +6,136 @@
 
 .page__action--container {
     height: 3rem;
-    background-color: lightblue;
+    background-color: #90ee90;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0.5rem;
 }
+.page__action {
+    margin: 0.5rem;
+}
+
 .cellProperties__action--container {
     height: 3rem;
-    background-color: lightcoral;
+    background-color: #f9fbfd;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cellProperties__action--container > * {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.cellProperties__action--container > select {
+    padding: 0.2rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
 }
 .formula__action--container {
     height: 3rem;
-    background-color: lightgoldenrodyellow;
+    background-color: #edf2fa;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
 }
-.grid--container {
-    height: calc(100vh - 12rem);
-    background-color: lightgreen;
+.formula__action--container > * {
+    display: inline-block;
 }
+
+.formula__action--container > input {
+    border: none;
+    outline: none;
+    height: 55%;
+    border-radius: 0.2rem;
+}
+
+.formula-icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.address-bar {
+    width: 5rem;
+    margin-right: 0.5rem;
+}
+.formula-bar {
+    width: 80rem;
+    margin-right: 0.5rem;
+}
+
 .sheet__action--container {
     height: 3rem;
-    background-color: lightslategray;
+    background-color: #edf2fa;
+    display: flex;
+    align-items: center;
+}
+.sheet__action--container > * {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.sheet-folder--container {
+    height: 1rem;
+    width: 75rem;
+    /* background-color: lightskyblue; */
+    display: flex;
+    align-items: center;
+}
+
+.sheet-folder {
+    text-decoration: underline;
+}
+
+.grid--container {
+    height: calc(100vh - 12rem);
+    background-color: #f9fbfd;
+    position: relative;
+    overflow: scroll;
+}
+
+.top-left-dummy-container {
+    height: 2rem;
+    width: 2rem;
+    background-color: #edf2fa;
+    border: 1px solid grey;
+}
+
+.address-column-container {
+    width: 2rem;
+    background-color: #edf2fa;
+}
+
+.cells-container {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    /* background-color: blue; */
+}
+.address-row-container {
+    height: 2rem;
+    background-color: #edf2fa;
+    display: flex;
+}
+
+.address-col {
+    height: 2rem;
+    height: 2rem;
+
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-row {
+    height: 2rem;
+    width: 4rem;
+
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
