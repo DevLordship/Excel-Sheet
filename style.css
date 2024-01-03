@@ -60,6 +60,7 @@
 .address-bar {
     width: 5rem;
     margin-right: 0.5rem;
+    text-align: center;
 }
 .formula-bar {
     width: 80rem;
@@ -101,11 +102,17 @@
     width: 2rem;
     background-color: #edf2fa;
     border: 1px solid grey;
+    position: fixed;
+    z-index: 5;
 }
 
 .address-column-container {
     width: 2rem;
     background-color: #edf2fa;
+    position: sticky;
+    top: 2rem;
+    left: 0;
+    z-index: 4;
 }
 
 .cells-container {
@@ -118,6 +125,9 @@
     height: 2rem;
     background-color: #edf2fa;
     display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
 }
 
 .address-col {
@@ -138,4 +148,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.row-conatiner {
+    display: flex;
+}
+.cell {
+    height: 2rem;
+    width: 4rem;
+
+    border: 1px solid grey;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
